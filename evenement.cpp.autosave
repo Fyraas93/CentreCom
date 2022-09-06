@@ -52,7 +52,7 @@ bool Evenement::ajouter()
     }
     else if(description.isEmpty())
     {
-        QMessageBox::information(nullptr,"erreur","le Description  doit  être rempli.");
+        QMessageBox::information(nullptr,"erreur","la Description  doit  être remplie.");
         qDebug() << "D EMPTY";
         return false;
     }
@@ -85,6 +85,7 @@ QSqlQueryModel * Evenement::afficher()
 
     return model;
 }
+
 
  bool Evenement::supprimer(int id)
  {

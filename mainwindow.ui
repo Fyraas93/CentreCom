@@ -40,7 +40,7 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color:qlineargradient(spread:pad, x1:0.483045, y1:1, x2:0.483, y2:0, stop:0 rgba(42, 46, 50, 255), stop:1 rgba(72, 79, 86, 255));</string>
+       <string notr="true">background-color:qlineargradient(spread:pad, x1:0.483045, y1:1, x2:0.483, y2:0, stop:0 rgba(42, 46, 50, 255), stop:1 rrgb(12, 12, 12));</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -66,7 +66,7 @@
        <property name="styleSheet">
         <string notr="true">QPushButton
 {
-background-color:qlineargradient(spread:pad, x1:0.483045, y1:1, x2:0.483, y2:0, stop:0 rgba(42, 46, 50, 255), stop:1 rgba(72, 79, 86, 255));
+background-color:qlineargradient(spread:pad, x1:0.483045, y1:1, x2:0.483, y2:0, stop:0 rgba(42, 46, 50, 255), stop:1 rgb(12, 12, 12));
 color: rgb(255, 255, 255);
 border-radius:0px;
 
@@ -74,7 +74,7 @@ border-radius:0px;
 QPushButton:hover
 {
 	
-	background-color:qlineargradient(spread:pad, x1:0.483, y1:1, x2:0.483, y2:0, stop:0.494318 rgba(42, 46, 50, 255), stop:1 rgba(72, 79, 86, 0));
+	background-color:qlineargradient(spread:pad, x1:0.483, y1:1, x2:0.483, y2:0, stop:0.494318 rgba(42, 46, 50, 255), stop:1  rgb(12, 12, 12));
 }</string>
        </property>
        <property name="text">
@@ -108,7 +108,11 @@ QPushButton:hover
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(42, 46, 50);</string>
+         <string notr="true">background-color: rgb(12, 12, 12);
+
+
+
+</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -128,7 +132,7 @@ QPushButton:hover
          <property name="styleSheet">
           <string notr="true">QPushButton
 {
-	background-color: rgb(42, 46, 50);
+	background-color: rgb(12, 12, 12);
    border-radius:0px;
 	color:#ffffff;
 	font-size:16px;
@@ -168,7 +172,7 @@ QPushButton:focus
          <property name="styleSheet">
           <string notr="true">QPushButton
 {
-	background-color: rgb(42, 46, 50);
+	background-color: rgb(12, 12, 12);
    border-radius:0px;
 	color:#ffffff;
 	font-size:16px;
@@ -208,7 +212,7 @@ QPushButton:focus
          <property name="styleSheet">
           <string notr="true">QPushButton
 {
-	background-color: rgb(42, 46, 50);
+	background-color: rgb(12, 12, 12);
    border-radius:0px;
 	color:#ffffff;
 	font-size:16px;
@@ -253,7 +257,7 @@ QPushButton:focus
 </string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="clients">
        <widget class="QTabWidget" name="ClientsTabWidget">
@@ -285,7 +289,7 @@ QPushButton:focus
 
 QTabBar::tab
 {
-	background-color: rgba(42, 46, 50,0);
+	background-color: rgb(12, 12, 12);
 	color:#ffffff;
 	width:100px;
 	font-size:16px;
@@ -295,13 +299,13 @@ QTabBar::tab
 
 QTabBar::tab:hover
 {
-	background-color:rgb(50, 53, 57);
-		color:rgb(249, 167, 43);
+	background-color: rgb(12, 12, 12);
+		color: rgb(12, 12, 12);
 }
 
 QTabBar::tab:focus
 {
-	background-color: rgb(59, 62, 66);
+	background-color:  rgb(12, 12, 12);
 	border-style:solid;
 	border-left-width:1px;
 	border-bottom-width:1px;
@@ -330,7 +334,7 @@ QTabBar::tab:selected
         </property>
         <widget class="QWidget" name="AddClients">
          <property name="styleSheet">
-          <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+          <string notr="true">background-color:rgb(12, 12, 12);</string>
          </property>
          <attribute name="title">
           <string>Add</string>
@@ -602,6 +606,18 @@ color: rgb(255, 255, 255);</string>
          </widget>
         </widget>
         <widget class="QWidget" name="ClientsDetails">
+         <property name="styleSheet">
+          <string notr="true">QTabBar::tab
+{
+	background-color: rgb(12, 12, 12);
+	color:#ffffff;
+	width:100px;
+	font-size:16px;
+	font-family:Calibri;
+
+}
+</string>
+         </property>
          <attribute name="title">
           <string>Details</string>
          </attribute>
@@ -627,7 +643,8 @@ color: rgb(255, 255, 255);</string>
              </sizepolicy>
             </property>
             <property name="styleSheet">
-             <string notr="true">border: 0px;</string>
+             <string notr="true">border: 0px;
+background-color :  rgb(12, 12, 12);</string>
             </property>
             <property name="widgetResizable">
              <bool>true</bool>
@@ -638,7 +655,7 @@ color: rgb(255, 255, 255);</string>
                <x>0</x>
                <y>0</y>
                <width>965</width>
-               <height>512</height>
+               <height>515</height>
               </rect>
              </property>
              <layout class="QVBoxLayout" name="ClientVerticalLayout">
@@ -1051,6 +1068,18 @@ border: 0px;</string>
          </layout>
         </widget>
         <widget class="QWidget" name="UpdateClients">
+         <property name="styleSheet">
+          <string notr="true">QTabBar::tab
+{
+	background-color: rgb(12, 12, 12);
+	color:#ffffff;
+	width:100px;
+	font-size:16px;
+	font-family:Calibri;
+
+}
+</string>
+         </property>
          <attribute name="title">
           <string>Modifier</string>
          </attribute>
@@ -1385,6 +1414,9 @@ color: rgb(255, 255, 255);</string>
        </widget>
       </widget>
       <widget class="QWidget" name="Evenements">
+       <property name="styleSheet">
+        <string notr="true">background-color : rgb(12, 12, 12);</string>
+       </property>
        <widget class="QTabWidget" name="EventsTabWidget">
         <property name="geometry">
          <rect>
@@ -1449,7 +1481,7 @@ QTabBar::tab:selected
 </string>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="EventWidget">
          <attribute name="title">
@@ -1484,7 +1516,7 @@ QTabBar::tab:selected
             </property>
             <property name="styleSheet">
              <string notr="true">border: 0px;
-background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0.109453 rgba(42, 46, 50, 255), stop:1 rgba(255, 255, 255, 0))</string>
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0.109453 rgba(42, 46, 50, 255), stop:1 rgb(12, 12, 12))</string>
             </property>
             <property name="title">
              <string/>
@@ -1854,10 +1886,10 @@ QPushButton:focus
             <widget class="QWidget" name="MoviesArea">
              <property name="geometry">
               <rect>
-               <x>0</x>
+               <x>-39</x>
                <y>0</y>
-               <width>759</width>
-               <height>606</height>
+               <width>69</width>
+               <height>69</height>
               </rect>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_4">

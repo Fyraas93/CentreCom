@@ -10,8 +10,8 @@ bool Connection::CreateConnection()
     bool test = false;
     //db.setHostName("sql7.freesqldatabase.com");
     db.setUserName("system");
-    db.setPassword("0000");
-    db.setDatabaseName("database_s1");
+    db.setPassword("geek");
+    db.setDatabaseName("Source_Projet2A");
 
 
     if(db.open())

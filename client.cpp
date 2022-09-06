@@ -26,12 +26,12 @@ bool Client::ajouter()
     QSqlQuery query;
     if(nom.isEmpty())
     {
-        QMessageBox::information(nullptr,"erreur","le nom ne doit pas être vide.");
+        QMessageBox::information(nullptr,"erreur","le nom  doit  être rempli.");
         return false;
     }
     else if(prenom.isEmpty())
     {
-        QMessageBox::information(nullptr,"erreur","le prenom ne doit pas être vide.");
+        QMessageBox::information(nullptr,"erreur","le prenom  doit  être rempli.");
         return false;
     }
     else if(numero <=0)
@@ -40,7 +40,7 @@ bool Client::ajouter()
     }
     else if(email.isEmpty())
     {
-        QMessageBox::information(nullptr,"erreur","le email ne doit pas être vide.");
+        QMessageBox::information(nullptr,"erreur","le email  doit  être rempli.");
         return false;
     }
     else
@@ -84,12 +84,12 @@ QSqlQueryModel * Client::afficher()
      QSqlQuery query;
      if(nom.isEmpty())
      {
-         QMessageBox::information(nullptr,"erreur","le nom ne doit pas être vide.");
+         QMessageBox::information(nullptr,"erreur","le nom  doit  être rempli.");
          return false;
      }
      else if(prenom.isEmpty())
      {
-         QMessageBox::information(nullptr,"erreur","le prenom ne doit pas être vide.");
+         QMessageBox::information(nullptr,"erreur","le prenom  doit  être rempli.");
          return false;
      }
      else if(numero <=0)
@@ -98,7 +98,7 @@ QSqlQueryModel * Client::afficher()
      }
      else if(email.isEmpty())
      {
-         QMessageBox::information(nullptr,"erreur","le email ne doit pas être vide.");
+         QMessageBox::information(nullptr,"erreur","le email  doit  être rempli.");
          return false;
      }
      else

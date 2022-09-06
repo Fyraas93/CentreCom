@@ -92,7 +92,7 @@ void MainWindow::on_ClientAddButton_clicked()
         ui->ClientComboBox->clear();
         ui->ClientComboBox->addItems(TICKET.ClientList());
 
-        QMessageBox::information(nullptr,"Success","Client registered successfully.");
+        QMessageBox::information(nullptr,"Success","Client bien enregistré.");
 
     }
     else
@@ -118,7 +118,7 @@ void MainWindow::on_ClientDeleteButton_clicked()
             ui->ClientComboBox->clear();
             ui->ClientComboBox->addItems(TICKET.ClientList());
 
-            QMessageBox::information(nullptr,"Success","CLIENT SUPPRIMER");
+            QMessageBox::information(nullptr,"Success","Client Supprimé");
 
         }
         else
@@ -128,7 +128,7 @@ void MainWindow::on_ClientDeleteButton_clicked()
     }
     else
     {
-         QMessageBox::information(nullptr,"error","select client");
+         QMessageBox::information(nullptr,"error","choisissez client");
     }
 
 }
@@ -156,7 +156,7 @@ void MainWindow::on_ClientUpdateButton_clicked()
     }
     else
     {
-         QMessageBox::information(nullptr,"error","select client");
+         QMessageBox::information(nullptr,"errur","select client");
     }
 
 }
@@ -179,7 +179,7 @@ void MainWindow::on_ClientModifierButton_clicked()
         ui->ClientComboBox->clear();
         ui->ClientComboBox->addItems(TICKET.ClientList());
 
-        QMessageBox::information(nullptr,"Success","Client est modifier");
+        QMessageBox::information(nullptr,"Success","Client  modifié");
 
     }
     else
@@ -222,7 +222,7 @@ void MainWindow::on_EventAddButton_clicked()
         ui->EventComboBox->clear();
         ui->EventComboBox->addItems(TICKET.EvenementList());
 
-        QMessageBox::information(nullptr,"Success","event registered successfully.");
+        QMessageBox::information(nullptr,"Succés","evenement bien enregistré.");
 
     }
     else
@@ -282,7 +282,7 @@ void MainWindow::on_EventModifierButton_clicked()
         ui->EventComboBox->clear();
         ui->EventComboBox->addItems(TICKET.EvenementList());
 
-        QMessageBox::information(nullptr,"Success","event registered successfully.");
+        QMessageBox::information(nullptr,"Succés","evenement bien enregistré.");
 
     }
     else
@@ -309,7 +309,7 @@ void MainWindow::on_EventDeleteButton_clicked()
             ui->EventComboBox->addItems(TICKET.EvenementList());
 
             chartview->setChart(TICKET.chart());
-            QMessageBox::information(nullptr,"Success","Evenement SUPPRIMER");
+            QMessageBox::information(nullptr,"Success","Evenement Supprimé");
         }
         else
         {
@@ -355,7 +355,7 @@ void MainWindow::on_PrintTicketButton_clicked()
     {
         chartview->setChart(TICKET.chart());
 
-        QMessageBox::information(nullptr,"Success","Ticket registered successfully.");
+        QMessageBox::information(nullptr,"Success","Ticket bien enregistré.");
 
     }
     else
